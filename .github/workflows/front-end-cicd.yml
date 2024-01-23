@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - uses: jakejarvis/s3-sync-action@master
@@ -20,4 +20,4 @@ jobs:
         AWS_REGION: 'us-east-1'
         SOURCE_DIR: 'website'
     - run:
-        aws cloudfront create-invalidation --distribution-id ${{ secrets.DISTRIBUTION }} --paths "/*"
+        aws cloudfront create-invalidation --distribution-id=${{ secrets.DISTRIBUTION }} --paths /
