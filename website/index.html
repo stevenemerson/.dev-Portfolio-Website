@@ -310,7 +310,7 @@
         // call post api request function
         //await post_visitor();
         try {
-            let response = await fetch('https://krbi2jw429.execute-api.us-east-1.amazonaws.com/default/VisitorCounter', {
+            let response = await fetch('https://0nel3bkidk.execute-api.us-east-1.amazonaws.com/default/VisitorCounter', {
                 method: 'GET',
             });
             let data = await response.json()
@@ -326,6 +326,7 @@
 
     <p>You are visitor number: <span id="visitors"></span></p>
     <p>This is a test line to show the GitHub Action and CIDI pipeline is working.</p>
+    <p>This is a test line to show the API Gateway has been updated.</p>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
