@@ -1,0 +1,5 @@
+# Local .terraform directories
+*/.terraform/
+
+# Don't check in the tfstate backup file
+*.tfstate.backup
